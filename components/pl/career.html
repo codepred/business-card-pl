@@ -35,7 +35,7 @@
     <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
         <div class="container-fluid">
             <div class="navbar-brand">
-                <a href="https://www.codepred.com/">
+                <a href="https://www.codepred.pl/">
                     <img src="../../assets/images/logo-cropped.png" alt="Mobirise" width="80px" height="80px">
                 </a>
                 </span>
@@ -100,30 +100,11 @@
 
         <script language="javascript" type="text/javascript">
 
-            document.getElementById('polishLanguage').addEventListener('click', function() {
-                var from = document.location.href;
-                var language = '/pl/'
-
-                if (from.includes('/pl/')) {
-                    return
-                }
-                
-                var current = 'en'
-                var url = from.replace('/' + current + '/', language);
-                document.location = url;
-
-            })
-
             document.getElementById('englishLanguage').addEventListener('click', function() {
                 var from = document.location.href;
-                var language = '/en/'
-
-                if (from.includes('/en/')) {
-                    return
-                }
-                
-                var current = 'pl'
-                var url = from.replace('/' + current + '/', language);
+                var language = '/pl/'
+                var current = 'en'
+                var url = "https://codepred.com/components/en/carrer.html";
                 document.location = url;
             })
 
